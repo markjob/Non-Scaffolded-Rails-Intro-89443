@@ -1,5 +1,7 @@
 NonScaffoldedExample::Application.routes.draw do
   
+  get "posts/index"
+
   root :to => 'info#index'
   # The URL / loads the index action of the info controller.
   
