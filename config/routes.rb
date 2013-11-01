@@ -13,6 +13,11 @@ NonScaffoldedExample::Application.routes.draw do
   
   match 'posts' => 'posts#index', :as => 'posts', :via => :get
   
+  match 'posts/new' => 'posts#new', :as => 'new_post', :via => :get
+  
+  match 'posts' => 'posts#create', :as => 'create_post', :via => :post
+  
+  
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
